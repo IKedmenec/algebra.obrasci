@@ -14,7 +14,7 @@
     <p>
         <label for="ime">Ime i prezime</label>
         <br>
-        <input id="ime" type="text" required>
+        <input id="ime" type=text" required>
         </p>
         
     <p>
@@ -29,11 +29,35 @@
         <br>
         <input type="text">
     </p>
+    
+    <p>
+        <label>Spol: </label><br>
+        
+       <input id="N" type="radio" value="N" name="spol">
+       <label for="N">Ne zelim se identificirat</label><br>
+        
+       <input id="M" type="radio" value="M" name="spol">
+       <label for="M">M</label><br>
+       
+       <input id="Ž" type="radio" value="Ž" name="spol">
+       <label for="Ž">Ž</label>
+
+        <!--
+        <select name="spol" id="spol">
+            <option value="musko">Musko</option>
+            <option value="zensko">Zensko</option>
+        </select>-->
+        
+    </p>
 
     <p>
-        <label for="button">Button</label>
-        <br>
-        <input type="button" value="">
+        <label for="opis">Opis problema</label><br>
+        <textarea name="opis" id="opis" cols="50" rows="7" maxlength="200">
+
+        </textarea>
+    </p>
+    <p>
+        <input type="submit" value="Posalji">
     </p>
 
     </form>
