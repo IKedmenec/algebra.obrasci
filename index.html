@@ -6,34 +6,59 @@
     <title>Obrasci</title>
 </head>
 <body>
-    <p>Index stranica za obrasce</p>
+    <h1>Index stranica za obrasce</h1>
     <p>Novi paragraf</p>
 
-    <form action="" method="post" enctype="text/plain autocomplete="off">
+    <form action="" name="kontak obrazac" enctype="text/plain" autocomplete="off">
+
+        
         
     <p>
-        <label for="ime">Ime i prezime</label>
+        <label for="ime">* Korisnik:</label>
         <br>
-        <input id="ime" type="text" required>
+        <input id="ime" type="text" required placeholder="Ime i prezime">
         </p>
         
     <p>
-        <label for="email">Email</label>
+        <label for="email">* Kontak:</label>
 
         <br>
-        <input type="email" id="email" required>
+        <input type="email" id="email" required placeholder="email@adresa.com">
        </p> 
+
+       <p>
+        <label for="tel">Telefon</label><br>
+        <input id="tel" type="tel" placeholder="+3859XXXXXX">
+       </p>
         
+    
     <p>
-        <label for="text">Text</label>
-        <br>
-        <input type="text">
+        <label>* Spol: </label><br>
+        
+       <input id="A" type="radio" value="A" name="spol" required>
+       <label for="A">Alien</label><br>
+        
+       <input id="M" type="radio" value="M" name="spol" required>
+       <label for="M">M</label><br>
+       
+       <input id="Ž" type="radio" value="Ž" name="spol" required>
+       <label for="Ž">Ž</label>
+
+        <!--
+        <select name="spol" id="spol">
+            <option value="musko">Musko</option>
+            <option value="zensko">Zensko</option>
+        </select>-->
+        
     </p>
 
     <p>
-        <label for="button">Button</label>
-        <br>
-        <input type="button" value="">
+        <label for="opis">* Opis problema: </label><br>
+        <textarea name="opis" id="opis" cols="50" rows="7" maxlength="200" required placeholder="...max 200 znakova"></textarea>
+    </p>
+
+    <p>
+        <input type="submit" value="Posalji">
     </p>
 
     </form>
