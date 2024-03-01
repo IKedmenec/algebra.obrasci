@@ -65,6 +65,67 @@
     
     </p>
 
+    <p> 
+        <label for="username">* Korisnicko Ime:</label><br>
+        <!--obavezno polje, po def. min 3 znaka a max 10., jer je kupac tako trazio-->
+        <input id="username" type="text" minlength="3" maxlength="10" required><br>
+
+        <label for="password">* Lozinka:</label><br>
+        <input type="password" id="password">
+    </p>
+
+    <p>
+        <label for="boja">Odaberi boju:</label><br>
+        <input id="boja" type="color">
+    </p>
+
+    <p>
+        <input id="odabir" type="checkbox" checked>
+        <label for="odabir">Zelim obavijesti na mail</label>
+    </p>
+
+    <p>
+        <input id="odabir1" type="checkbox" checked>
+        <label for="odabir1">Suglasan sam za GDPR</label>
+    </p>
+
+    <p>
+        Ocijenite sadržaj stranice <br>
+        <label for="o1">1</label>
+        <input id="o1" name="ocjena" type="radio">
+        <label for="o1">2</label>
+        <input id="o1" name="ocjena" type="radio">
+        <label for="o1">3</label>
+        <input id="o1" name="ocjena" type="radio" checked>
+        <label for="o1">4</label>
+        <input id="o1" name="ocjena" type="radio">
+        <label for="o1">5</label>
+        <input id="o1" name="ocjena" type="radio">
+    </p>
+
+    <p>
+         <label for="grad">Odaberi Grad:</label><br>
+         <select name="" id="grad">
+            <Option>London</Option>
+            <Option>Rim</Option>
+            <Option>Pariz</Option>
+            <Option>Zagreb</Option>
+            <Option selected>Osijek</Option>
+         </select>
+    </p>
+
+    <p>
+         <label for="grad2">Trazi Grad</label><br>
+         <input id="grad2" type="text" list="gradovi">
+         <datalist id="gradovi">
+            <Option>London</Option>
+            <Option>Rim</Option>
+            <Option>Pariz</Option>
+            <Option>Zagreb</Option>
+            <Option selected>Osijek</Option>
+         </datalist>
+    </p>
+
     <p>
         <input type="submit" value="Posalji">
         <input type="reset" value="Resetiraj podatke">
