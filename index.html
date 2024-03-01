@@ -3,134 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obrasci</title>
+    <title>Strukturiranje Sadrzaja</title>
 </head>
 <body>
-    <h1>Index stranica za obrasce</h1>
-    <p>Novi paragraf</p>
 
-    <form action="" name="kontak obrazac" enctype="text/plain" autocomplete="off">
+    <header>
+        <h1>Moja semanticka stranica</h1>
+    <nav>
+    <a href="">Prazan</a> |
+    <a href="obrasci_primjeri.html">Link na primjere obrazaca</a> |
+    <a href="https://www.google.com/" target="_blank">Google</a>
+    </nav>
 
-        
-        
+    </header>
+
+    <main>
+
     <p>
-        <label for="ime">* Korisnik:</label>
-        <br>
-        <input id="ime" type="text" required placeholder="Ime i prezime">
-        </p>
-        
-    <p>
-        <label for="email">* Kontak:</label>
+        Ovdje se nalazi glavni dio stranice
+    </p></main>
 
-        <br>
-        <input type="email" id="email" required placeholder="email@adresa.com">
-       </p> 
-
-       <p>
-        <label for="tel">Telefon</label><br>
-        <input id="tel" type="tel" placeholder="+3859XXXXXX">
-       </p>
-        
+    <hr>
     
-    <p>
-        <label>* Spol: </label><br>
-        
-       <input id="A" type="radio" value="A" name="spol" required>
-       <label for="A">Alien</label><br>
-        
-       <input id="M" type="radio" value="M" name="spol" required>
-       <label for="M">M</label><br>
-       
-       <input id="Ž" type="radio" value="Ž" name="spol" required>
-       <label for="Ž">Ž</label>
+    <footer>Moje ime firme j.d.o.o.</footer>
 
-        <!--
-        <select name="spol" id="spol">
-            <option value="musko">Musko</option>
-            <option value="zensko">Zensko</option>
-        </select>-->
-        
-    </p>
-
-    <p>
-        <label for="opis">* Opis problema: </label><br>
-        <textarea name="opis" id="opis" cols="50" rows="7" maxlength="200" required placeholder="...max 200 znakova"></textarea><br>
-
-    <label for="datum">Datum prijave:</label><br>
-    <input id="datum" type="date" min="2024-02-18" max="2024-02-29"/><br>
-
-    <label for="dokument">Dokument privitak:</label><br>
-
-    <input id="dokument" type="file"/><br>
     
-    </p>
 
-    <p> 
-        <label for="username">* Korisnicko Ime:</label><br>
-        <!--obavezno polje, po def. min 3 znaka a max 10., jer je kupac tako trazio-->
-        <input id="username" type="text" minlength="3" maxlength="10" required><br>
-
-        <label for="password">* Lozinka:</label><br>
-        <input type="password" id="password">
-    </p>
-
-    <p>
-        <label for="boja">Odaberi boju:</label><br>
-        <input id="boja" type="color">
-    </p>
-
-    <p>
-        <input id="odabir" type="checkbox" checked>
-        <label for="odabir">Zelim obavijesti na mail</label>
-    </p>
-
-    <p>
-        <input id="odabir1" type="checkbox" checked>
-        <label for="odabir1">Suglasan sam za GDPR</label>
-    </p>
-
-    <p>
-        Ocijenite sadržaj stranice <br>
-        <label for="o1">1</label>
-        <input id="o1" name="ocjena" type="radio">
-        <label for="o1">2</label>
-        <input id="o1" name="ocjena" type="radio">
-        <label for="o1">3</label>
-        <input id="o1" name="ocjena" type="radio" checked>
-        <label for="o1">4</label>
-        <input id="o1" name="ocjena" type="radio">
-        <label for="o1">5</label>
-        <input id="o1" name="ocjena" type="radio">
-    </p>
-
-    <p>
-         <label for="grad">Odaberi Grad:</label><br>
-         <select name="" id="grad">
-            <Option>London</Option>
-            <Option>Rim</Option>
-            <Option>Pariz</Option>
-            <Option>Zagreb</Option>
-            <Option selected>Osijek</Option>
-         </select>
-    </p>
-
-    <p>
-         <label for="grad2">Trazi Grad</label><br>
-         <input id="grad2" type="text" list="gradovi">
-         <datalist id="gradovi">
-            <Option>London</Option>
-            <Option>Rim</Option>
-            <Option>Pariz</Option>
-            <Option>Zagreb</Option>
-            <Option selected>Osijek</Option>
-         </datalist>
-    </p>
-
-    <p>
-        <input type="submit" value="Posalji">
-        <input type="reset" value="Resetiraj podatke">
-    </p>
-
-    </form>
+    
 </body>
+
 </html>
+
