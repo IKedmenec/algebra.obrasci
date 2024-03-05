@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strukturiranje Sadrzaja</title>
+
+    <style>
+        aside {
+            width: 30%;
+            padding-left: 15px;
+            margin-left: 15px;
+            float: right;
+            font-style: italic;
+            background-color: lightgray;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0%;
+            width: 100%;
+            height: 2.5rem%; /* Footer height */
+        }
+    </style>
+
 </head>
 <body>
 
@@ -18,14 +37,45 @@
     </header>
 
     <main>
-
-    <p>
-        Ovdje se nalazi glavni dio stranice
-    </p></main>
-
-    <hr>
+    <p> Ovdje se nalazi glavni dio stranice</p>
     
-    <footer>Moje ime firme j.d.o.o.</footer>
+    <article>
+    <section>
+
+        <h2>Prvio poglavlje</h2>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit explicabo, placeat dicta perferendis fugit molestias id eligendi voluptatibus adipisci impedit vel deserunt porro sapiente eum vitae, amet alias fuga quas.
+    </p>
+
+    <aside>
+        Cjelina koja nije dio glavnog teksta
+    </aside>
+
+    </section>
+    </article>
+        
+    <h2>Prvio poglavlje</h2>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit explicabo, placeat dicta perferendis fugit molestias id eligendi voluptatibus adipisci impedit vel deserunt porro sapiente eum vitae, amet alias fuga quas.
+    </p>
+
+    <article>
+        <p>samo slike</p>
+
+        <figure>
+            <p>Ovdje ce nam se nalaziti slike o cvijecu</p> <br>
+        <img src="" alt="slike crvene ruze" width="50px" height="150px">
+        <figcaption>Naziv ili opis slike</figcaption>
+        </figure>
+    </article>
+    </main>
+
+    
+    
+    <footer>
+        <hr>
+        Moje ime firme j.d.o.o.
+    </footer>
 
     
 
